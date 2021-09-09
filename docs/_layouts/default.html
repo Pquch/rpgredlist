@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+<div class="Margins">
+    <p class="LatexTitle">{{ page.title }}</p>
+    {% if page.creator %}
+    <p class="LatexName">{{ page.creator }}</p>
+    {% endif %} {% if page.date %}
+    <p class="LatexDate">{{ page.date }}</p>
+    {% endif %}
+
+    {% if page.abstract %}
+    <div class="AbstractMargins">
+        <p class="LatexAbstract">{{ page.abstract_title }}</p>
+        <p class="LatexAbstractText">{{ page.abstract }}</p>
+    </div>
+    {% endif %}
+
+    <ul class="latex-list">
+        {% for product in site.data.redlist %}
+        <li>
+            <a href="{{ product.product_link }}">
+                {{ product.product_name }}
+            </a>
+          &#8211;
+            <a href="{{ product.publisher_link }}">
+                {{ product.publisher_name }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    <!--{{ content }}-->
+    <div class="footer-margins">
+        <p class="footer-title">This List is Open Source</p>
+      <p class="footer-subtitle">This is an open source list brought to you by <a href="https://absolutetabletop.com">Absolute Tabletop</a>.
+        </p>
+        <p class="footer-subtitle">
+          You can make submissions to the list via the Google Form or by contributing to the project on <a href="https://github.com/ImagineItBetter/rpgredlist">GitHub Page</a>.
+        </p>
+    </div>
+
+</div>
+</body>
+<!--<footer class="footerSize">
+
+</footer>-->
+</html>
