@@ -184,6 +184,7 @@ List Styles
     margin-bottom: 45px;
     line-height: 125%;
     column-count: 1;
+    padding-left: 0;
 }
 
 .latex-list ul {
@@ -202,4 +203,10 @@ List Styles
 .latex-list li a:hover {
     background-color: transparent;
     text-decoration: underline;
+}
+
+.list-wrapper {
+    padding-left: 6%;
+    width: 88%;
+    padding-bottom: 15px;
 }

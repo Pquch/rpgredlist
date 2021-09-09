@@ -7,7 +7,9 @@
 </head>
 <body>
 <div class="Margins">
-    <p class="LatexTitle"><span class="latex-title-backing">{{ page.title }}</span></p>
+    <p class="LatexTitle">
+        <span class="latex-title-backing">{{ page.title }}</span>
+    </p>
     {% if page.creator %}
     <p class="LatexName">{{ page.creator }}</p>
     {% endif %} {% if page.date %}
@@ -21,26 +23,32 @@
     </div>
     {% endif %}
 
-    <ul class="latex-list">
-        {% for product in site.data.redlist %}
-        <li>
-            <a href="{{ product.product_link }}">
-                {{ product.product_name }}
-            </a>
-          &#8211;
-            <a href="{{ product.publisher_link }}">
-                {{ product.publisher_name }}
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="list-wrapper">
+        <ul class="latex-list">
+            {% for product in site.data.redlist %}
+            <li>
+                <a href="{{ product.product_link }}">
+                    {{ product.product_name }}
+                </a>
+                &#8211;
+                <a href="{{ product.publisher_link }}">
+                    {{ product.publisher_name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
     <!--{{ content }}-->
     <div class="footer-margins">
         <p class="footer-title">This List is Open Source</p>
-      <p class="footer-subtitle">This is an open source list brought to you by <a href="https://absolutetabletop.com">Absolute Tabletop</a>.
+        <p class="footer-subtitle">This is an open source list brought to you by
+            <a href="https://absolutetabletop.com">Absolute Tabletop</a>
+            .
         </p>
         <p class="footer-subtitle">
-          You can make submissions to the list via the Google Form or by contributing to the project on <a href="https://github.com/ImagineItBetter/rpgredlist">GitHub Page</a>.
+            You can make submissions to the list via the Google Form or by contributing to the project on
+            <a href="https://github.com/ImagineItBetter/rpgredlist">GitHub Page</a>
+            .
         </p>
     </div>
 
