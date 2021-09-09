@@ -117,6 +117,16 @@
 
 /**********
 
+Title Styles
+
+ */
+span.latex-title-backing {
+    background-color: #b30000;
+    color: white;
+}
+
+/**********
+
 Footer Styles
 
  */
