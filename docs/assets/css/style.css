@@ -1,17 +1,17 @@
 @font-face {
     font-family: CMR;
     src: url(../fonts/cmuserif_roman_macroman/cmunrm-webfont.woff);
-  }
-  @font-face {
+}
+@font-face {
     font-family: CMB;
     src: url(../fonts/cmuserif_bold_macroman/cmunbx-webfont.woff);
-  }
+}
 
 
 .LatexTitle{
     font-family: CMR;
     font-size: 40px;
-    padding-top: 40vh;
+    padding-top: 0;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -113,4 +113,83 @@
 .footerSize{
     height: 30vh;
     width: 100%;
+}
+
+/**********
+
+Footer Styles
+
+ */
+
+.footer-margins {
+    padding-left: 6%;
+    width: 88%;
+    padding-bottom: 15px;
+}
+
+.footer-title{
+    font-family: CMR;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-subtitle{
+    font-family: CMR;
+    font-size: 23px;
+    text-align: Left;
+    margin-top: 13px;
+    margin-bottom: 45px;
+    line-height: 125%;
+    column-count: 1;
+}
+
+/**********
+
+Link Styles
+
+ */
+
+a {
+    color: #b30000;
+}
+
+a:hover {
+    color: white;
+    background-color: #b30000;
+}
+
+/**********
+
+List Styles
+
+ */
+
+.latex-list {
+    font-family: CMR;
+    font-size: 23px;
+    text-align: Left;
+    margin-top: 13px;
+    margin-bottom: 45px;
+    line-height: 125%;
+    column-count: 1;
+}
+
+.latex-list ul {
+    padding: 0;
+}
+
+.latex-list li {
+    list-style-type: none;
+}
+
+.latex-list li a {
+    color: black;
+    text-decoration: none;
+}
+
+.latex-list li a:hover {
+    background-color: transparent;
+    text-decoration: underline;
 }
