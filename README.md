@@ -4,4 +4,4 @@ I came across a list of the most inclusive tabletop roleplaying games but I had 
 
 This is an open source list that works to compile roleplaying games that include inclusive themes. 
 
-Here is the link to the [Google Form](forms.google.com) to submit your own, or create a pull request.
+Here is the link to the [Google Form](https://forms.gle/9nRb7tLrvJyqqWWe7) to submit your own, or create a pull request.
